@@ -1,0 +1,29 @@
+form {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.js-btn {
+    max-width: 20%;
+}
+
+table {
+    margin: 10px 50px;
+}
+
+.left-side {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+    margin-top: 20px;
+}
