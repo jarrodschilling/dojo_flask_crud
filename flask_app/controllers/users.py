@@ -35,3 +35,8 @@ def update_one():
     print(request.form['user_id'])
 
     return redirect("/users")
+
+@app.route('/users/<int:user_id>/delete')
+def delete(user_id):
+    User.delete_one(user_id)
+    return redirect('/users')

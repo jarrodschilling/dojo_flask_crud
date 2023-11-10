@@ -27,3 +27,18 @@ table {
     margin-left: 60px;
     margin-top: 20px;
 }
+
+.js-container {
+    border: 2px solid black;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.js-head {
+    text-align: left;
+    margin-left: 20px;
+}
+
+h3 {
+    margin: 30px 10px;
+}
