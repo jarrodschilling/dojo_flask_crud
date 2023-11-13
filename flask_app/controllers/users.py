@@ -15,6 +15,11 @@ def add_form():
 
 @app.route('/add', methods=["POST"])
 def add_one():
+    if not User.validate_user(request.form):
+        session['first_name'] = request.form.get('first_name')
+        session['last_name'] = request.form.get('last_name')
+        return redirect('/users/new')
+    
     User.save(request.form)
     return redirect ('/users')
 
